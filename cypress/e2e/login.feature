@@ -21,7 +21,7 @@ Feature: Login
       Then User look message "Người dùng _@Tên đăng nhập@_ không tồn tại!" popup
 
     Scenario: SI-03 Verify that Login unsuccessfully with invalid Password
-      When Enter "text" in "Tên đăng nhập" with "admin@admin.com"
+      When Enter "email" in "Tên đăng nhập" with "admin@admin.com"
       When Enter "text" in "Mật khẩu" with "Password12"
       When Click "Đăng nhập" button
       Then User look message "Thông tin đăng nhập không hợp lệ cho người dùng _@Tên đăng nhập@_" popup
@@ -40,3 +40,4 @@ Feature: Login
       When Enter "email" in "Tên đăng nhập" with "_RANDOM_"
       When Click "Đăng nhập" button
       Then Required message "Mật khẩu" displayed under "Xin vui lòng nhập mật khẩu" field
+

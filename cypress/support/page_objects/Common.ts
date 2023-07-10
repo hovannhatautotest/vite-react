@@ -36,8 +36,8 @@ export default class Common {
     removeTreeByName: (val: string) => this.elements.treeByName(val).find('.la-trash'),
   };
   spin = () => {
-    cy.wait(200);
-    cy.$$('.ant-spin-spinning').length && cy.get('.ant-spin-spinning').should('not.exist', { timeout: 10000 });
+    cy.wait(10);
+    cy.$$('.ant-spin-spinning').length && cy.get('.ant-spin-spinning').should('not.exist', { timeout: 50 });
   };
   clickSubmitPopover = () =>
     cy
