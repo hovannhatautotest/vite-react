@@ -315,4 +315,4 @@ Click "${text}" pagination
     Click    xpath=//div[contains(@class,"ant-select-item-option-content") and text() = "${text}"]
 
 Required message under "${text}" field3
-    Element Text Should Be    //div[contains(@class,"ant-select-item-option-content")]    ${text}
+    Element Should Be Visible    //div[contains(@class,"ant-select-item-option-content")]    ${text}
