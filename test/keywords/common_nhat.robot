@@ -697,3 +697,6 @@ Click "${profile}" to profile
     ${element}=    Set Variable    //div[text() = '${profile}']
     Wait Until Element Is Visible    ${element}
     Click    ${element}
+
+Click Double
+    Click   //*[contains(@class, "ant-table-row")][1]   left    2
