@@ -698,5 +698,5 @@ Click "${profile}" to profile
     Wait Until Element Is Visible    ${element}
     Click    ${element}
 
-Click Double
-    Click   //*[contains(@class, "ant-table-row")][1]   left    2
+# Click Double
+#     Click   //*[contains(@class, "ant-table-row")][1]   left    2
